@@ -1,0 +1,39 @@
+.impact {
+  background-color: var(--secondary);
+  padding: 2rem;
+  text-align: center;
+}
+
+.impact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.impact p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.stat-text {
+  font-size: 1rem;
+}

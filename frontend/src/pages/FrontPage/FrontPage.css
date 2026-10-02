@@ -1,0 +1,397 @@
+header {
+  background-color: var(--light);
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: var(--secondary);
+}
+
+nav a.active {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  background-color: var(--light);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.user-icon {
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.hero {
+  padding: 2rem;
+  background-color: var(--light);
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: var(--dark);
+}
+
+.hero p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin-bottom: 1.5rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.how-it-works {
+  background-color: var(--gray);
+  padding: 2rem;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.how-it-works p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step {
+  background-color: var(--light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 200px;
+  max-width: 280px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.step-icon {
+  background-color: var(--secondary);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.donation-needs {
+  padding: 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.donation-needs h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.donation-needs p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--dark);
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 80px;
+}
+
+.category:hover {
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+.category-icon {
+  background-color: var(--secondary);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.search-bar {
+  display: flex;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 0.75rem 1rem;
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.needs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.need-card {
+  background-color: var(--light);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.need-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.need-card-content {
+  padding: 1rem;
+}
+
+.need-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.organization {
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem;
+}
+
+.progress {
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--primary);
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.how-to-start {
+  padding: 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.how-to-start h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.how-to-start p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.process-step {
+  position: relative;
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.step-number {
+  background-color: var(--primary);
+  color: var(--light);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.process-step h3 {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #333;
+  color: var(--light);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-content {
+    padding-right: 0;
+  }
+
+  .steps,
+  .categories,
+  .needs-list,
+  .stats,
+  .process-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step,
+  .need-card,
+  .process-step {
+    max-width: 100%;
+  }
+}
+
+/* Added for redesigned homepage */
+.header-cta { display: flex; gap: 0.6rem; align-items: center; }
+.hero .btn-group.secondary-links { margin-top: 0.9rem; gap: 1.5rem; }
+.hero .btn-group.secondary-links a { color: var(--color-primary, #0f6e5f); font-weight: 600; }

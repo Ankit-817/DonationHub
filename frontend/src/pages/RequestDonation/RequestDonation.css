@@ -1,0 +1,3 @@
+.request-donation-card { overflow: hidden; }
+.request-donation-card > img { width: 100%; height: 260px; object-fit: cover; background: var(--color-bg); }
+.request-donation-card h1 { font-size: 1.5rem; }
