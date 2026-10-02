@@ -96,9 +96,7 @@ const loginUser = asyncHandler(async (req, res) => {
 // refresh cookie automatically - the frontend never handles that token.
 const refreshSession = asyncHandler(async (req, res) => {
     const refreshToken = req.cookies?.[REFRESH_TOKEN_COOKIE];
-    if (!refreshToken) {
-        return res.status(401).json({ success: false, message: "No refresh token provided" });
-    }
+    if (!refreshToken) throw new ApiError(401, "No refresh token provided");
 
     const tokenHash = hashToken(refreshToken);
     const session = await Session.findOne({ tokenHash });
