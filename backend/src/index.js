@@ -26,9 +26,10 @@ const { generalLimiter } = require("./middlewares/rateLimit");
 const app = express();
 const server = http.createServer(app);
 
-// Behind a reverse proxy (Render/Heroku/nginx) in production, so
-// express-rate-limit and secure cookies see the real client IP/protocol.
-if (process.env.NODE_ENV === "production") {
+// Render forwards client details through one trusted proxy hop. Trusting
+// that hop lets rate limiting use the real client IP instead of rejecting
+// Render's X-Forwarded-For header as spoofed.
+if (process.env.NODE_ENV === "production" || process.env.RENDER) {
     app.set("trust proxy", 1);
 }
 
