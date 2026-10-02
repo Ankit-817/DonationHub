@@ -20,7 +20,7 @@ Donation Hub is a full-stack community platform for sharing useful items. People
 
 - **Frontend:** React 19, Vite, React Router, Axios, Socket.IO client.
 - **Backend:** Node.js, Express, MongoDB, Mongoose, JWT, Socket.IO.
-- **AI:** OpenAI or Gemini through the backend provider abstraction in `backend/src/services/ai/providerClient.js`. The frontend never receives the AI API key.
+- **AI:** Gemini through the backend provider abstraction in `backend/src/services/ai/providerClient.js`. The frontend never receives the AI API key.
 - **Image storage:** Cloudinary.
 
 ## Project structure
